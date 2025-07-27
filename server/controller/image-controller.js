@@ -25,7 +25,7 @@ export const uploadImage = async (request, response) => {
 
     // Return download link with file ID
     response.status(200).json({
-      path: `http://localhost:${process.env.PORT}/file/${file._id}`,
+      path: `https://file-uploading-okii.onrender.com/file/${file._id}`,
       message: "File uploaded successfully",
     });
   } catch (error) {
